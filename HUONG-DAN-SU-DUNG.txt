@@ -1,0 +1,43 @@
+==========================================================
+  WEBSITE CHI BỘ BAN PHÁP CHẾ HĐND TỈNH THANH HÓA
+  HƯỚNG DẪN SỬ DỤNG (phiên bản có Backend Supabase)
+==========================================================
+
+>> Hướng dẫn TRIỂN KHAI (cài đặt lần đầu): xem tệp README.md
+
+----------------------------------------------------------
+A) SỬ DỤNG HẰNG NGÀY
+----------------------------------------------------------
+1) Mở địa chỉ website (GitHub Pages) đã được công khai.
+2) Đăng nhập quản trị:
+   - Bấm "🔒 Quản trị" ở góc trên bên phải.
+   - Nhập EMAIL và MẬT KHẨU đã được tạo trong Supabase.
+   - (Không còn dùng admin/123123 — nay là tài khoản thật, an toàn.)
+3) Khi đã đăng nhập, thanh QUẢN TRỊ đỏ hiện ở cuối màn hình và
+   xuất hiện nút "✎ Sửa" trên từng đảng viên / tin bài / văn bản.
+
+----------------------------------------------------------
+B) QUYỀN QUẢN TRỊ
+----------------------------------------------------------
+- Sửa thông tin 6 đảng viên + TẢI ẢNH chân dung (lưu trên máy chủ).
+- Thêm / sửa / xóa Tin bài (ảnh minh họa, nội dung chi tiết).
+- Thêm / sửa / xóa Văn bản và dán liên kết tệp đính kèm.
+- Đăng xuất khi dùng xong.
+
+>> Mọi thay đổi lưu vào cơ sở dữ liệu Supabase nên TẤT CẢ máy đều thấy.
+
+----------------------------------------------------------
+C) KHÁC BIỆT SO VỚI BẢN CŨ
+----------------------------------------------------------
+- Đăng nhập THẬT (mật khẩu mã hóa, không nằm trong mã nguồn).
+- Dữ liệu DÙNG CHUNG cho mọi người, mọi thiết bị.
+- Ảnh lưu an toàn trên Supabase Storage.
+- Công khai trên Internet qua GitHub Pages.
+
+----------------------------------------------------------
+D) AN TOÀN
+----------------------------------------------------------
+- Chỉ người được cấp tài khoản trong Supabase mới sửa được nội dung.
+- Người xem bình thường chỉ đọc, không sửa được (bảo vệ bằng RLS).
+- Tuyệt đối KHÔNG đăng tải tài liệu MẬT lên website công khai.
+==========================================================

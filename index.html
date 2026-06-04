@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Trang thông tin Chi bộ Ban Pháp chế - Đảng bộ Văn phòng Đoàn ĐBQH và HĐND tỉnh Thanh Hóa. Đoàn kết - Trí tuệ - Kỷ cương - Trách nhiệm." />
+  <title>Chi bộ Ban Pháp chế HĐND tỉnh Thanh Hóa</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__left">ĐẢNG BỘ VĂN PHÒNG ĐOÀN ĐBQH VÀ HĐND TỈNH THANH HÓA</span>
+      <span class="topbar__right">
+        <a href="#" data-login>🔒 Quản trị</a>
+        <span class="dot">•</span>
+        <a href="#lien-he">Liên hệ</a>
+        <span class="dot">•</span>
+        <span id="today"></span>
+      </span>
+    </div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#trang-chu" class="brand">
+        <span class="brand__emblem" aria-hidden="true">
+          <!-- Búa liềm cách điệu -->
+          <svg viewBox="0 0 64 64" width="52" height="52">
+            <circle cx="32" cy="32" r="30" fill="#ffd24c"/>
+            <circle cx="32" cy="32" r="30" fill="none" stroke="#b8860b" stroke-width="1.5"/>
+            <g fill="#b01217">
+              <path d="M20 44c-4-6-3-15 4-20l3 3c-5 4-6 11-3 16z"/>
+              <rect x="29" y="14" width="4" height="30" rx="2" transform="rotate(40 31 29)"/>
+              <rect x="26" y="22" width="20" height="4" rx="2" transform="rotate(-8 36 24)"/>
+            </g>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>CHI BỘ BAN PHÁP CHẾ</strong>
+          <small>HĐND tỉnh Thanh Hóa</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#trang-chu" class="active">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="#nhan-su">Tổ chức &amp; Nhân sự</a>
+        <a href="#nhiem-vu">Chức năng – Nhiệm vụ</a>
+        <a href="tin-tuc.html">Tin tức</a>
+        <a href="van-ban.html">Văn bản</a>
+        <a href="#lien-he">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="trang-chu">
+    <div class="hero__overlay"></div>
+    <div class="container hero__inner">
+      <p class="hero__eyebrow reveal">Đảng Cộng sản Việt Nam · Quang vinh muôn năm</p>
+      <h1 class="hero__title reveal">
+        Chi bộ Ban Pháp chế<br /><span>HĐND tỉnh Thanh Hóa</span>
+      </h1>
+      <p class="hero__motto reveal">Đoàn kết · Trí tuệ · Kỷ cương · Gương mẫu · Trách nhiệm</p>
+      <div class="hero__actions reveal">
+        <a href="#nhan-su" class="btn btn--gold">Tổ chức &amp; Nhân sự</a>
+        <a href="#nhiem-vu" class="btn btn--ghost">Chức năng – Nhiệm vụ</a>
+      </div>
+    </div>
+    <div class="hero__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,90 1080,-10 1440,40 L1440,80 L0,80 Z" fill="#fbf7ef"/></svg>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat reveal"><span class="stat__num" data-count="6">0</span><span class="stat__label">Đảng viên</span></div>
+      <div class="stat reveal"><span class="stat__num" data-count="1">0</span><span class="stat__label">Chi bộ trực thuộc Đảng bộ</span></div>
+      <div class="stat reveal"><span class="stat__num" data-count="12">0</span><span class="stat__label">Buổi sinh hoạt / năm</span></div>
+      <div class="stat reveal"><span class="stat__num" data-count="100">0</span><span class="stat__suffix">%</span><span class="stat__label">Hoàn thành nhiệm vụ</span></div>
+    </div>
+  </section>
+
+  <!-- ===== GIỚI THIỆU ===== -->
+  <section class="section" id="gioi-thieu">
+    <div class="container grid-2">
+      <div class="reveal">
+        <span class="kicker">Giới thiệu</span>
+        <h2 class="section__title">Về Chi bộ Ban Pháp chế</h2>
+        <p>Chi bộ Ban Pháp chế là tổ chức cơ sở đảng trực thuộc Đảng bộ Văn phòng Đoàn ĐBQH và HĐND tỉnh Thanh Hóa, lãnh đạo toàn diện hoạt động chuyên môn của Ban Pháp chế HĐND tỉnh.</p>
+        <p>Với phương châm <strong>“Đoàn kết – Trí tuệ – Kỷ cương – Trách nhiệm”</strong>, Chi bộ không ngừng nâng cao năng lực lãnh đạo, sức chiến đấu của tổ chức đảng và chất lượng đội ngũ đảng viên; tham mưu hiệu quả công tác thẩm tra, giám sát trong lĩnh vực pháp chế, nội chính, tư pháp của HĐND tỉnh.</p>
+        <ul class="ticks">
+          <li>Lãnh đạo thực hiện nhiệm vụ chính trị, chuyên môn của Ban Pháp chế.</li>
+          <li>Xây dựng chi bộ trong sạch, vững mạnh tiêu biểu.</li>
+          <li>Đẩy mạnh học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh.</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <div class="info-card">
+          <h3>Tôn chỉ hoạt động</h3>
+          <div class="value-grid">
+            <div class="value"><span class="value__icon">⚖️</span><b>Thượng tôn pháp luật</b><p>Bảo đảm tính hợp hiến, hợp pháp trong tham mưu, thẩm tra.</p></div>
+            <div class="value"><span class="value__icon">🤝</span><b>Đoàn kết</b><p>Thống nhất ý chí và hành động trong toàn Chi bộ.</p></div>
+            <div class="value"><span class="value__icon">🛡️</span><b>Liêm chính</b><p>Cần, kiệm, liêm, chính, chí công vô tư.</p></div>
+            <div class="value"><span class="value__icon">📈</span><b>Đổi mới</b><p>Nâng cao chất lượng giám sát, phục vụ Nhân dân.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NHÂN SỰ ===== -->
+  <section class="section section--alt" id="nhan-su">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="kicker">Tổ chức &amp; Nhân sự</span>
+        <h2 class="section__title">Cấp ủy và đảng viên Chi bộ</h2>
+        <p class="section__lead">Chi bộ gồm 06 đảng viên, do đồng chí Bí thư Chi bộ – Trưởng Ban Pháp chế lãnh đạo.</p>
+      </div>
+
+      <div class="people" id="membersGrid"></div>
+      <p class="note reveal">* Đăng nhập <strong>Quản trị</strong> (góc trên) để sửa tên, chức danh và tải ảnh thật của từng đồng chí.</p>
+    </div>
+  </section>
+
+  <!-- ===== CHỨC NĂNG NHIỆM VỤ ===== -->
+  <section class="section" id="nhiem-vu">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="kicker">Chức năng – Nhiệm vụ</span>
+        <h2 class="section__title">Nhiệm vụ trọng tâm của Chi bộ</h2>
+      </div>
+      <div class="cards">
+        <div class="card reveal"><div class="card__no">01</div><h3>Lãnh đạo nhiệm vụ chính trị</h3><p>Lãnh đạo Ban Pháp chế thực hiện tốt nhiệm vụ thẩm tra, giám sát trên lĩnh vực pháp chế, nội chính, tư pháp.</p></div>
+        <div class="card reveal"><div class="card__no">02</div><h3>Công tác tư tưởng</h3><p>Giáo dục chính trị, tư tưởng, đạo đức, lối sống cho đảng viên; nắm bắt và định hướng dư luận.</p></div>
+        <div class="card reveal"><div class="card__no">03</div><h3>Xây dựng tổ chức Đảng</h3><p>Củng cố, kiện toàn tổ chức; nâng cao chất lượng sinh hoạt chi bộ và đội ngũ đảng viên.</p></div>
+        <div class="card reveal"><div class="card__no">04</div><h3>Kiểm tra, giám sát</h3><p>Thực hiện công tác kiểm tra, giám sát và thi hành kỷ luật Đảng theo Điều lệ.</p></div>
+        <div class="card reveal"><div class="card__no">05</div><h3>Học tập theo Bác</h3><p>Đẩy mạnh học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh gắn với nhiệm vụ.</p></div>
+        <div class="card reveal"><div class="card__no">06</div><h3>Phát triển đảng viên</h3><p>Bồi dưỡng quần chúng ưu tú, làm tốt công tác phát triển đảng viên mới.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HỌC TẬP THEO BÁC (QUOTE) ===== -->
+  <section class="quote-band">
+    <div class="container quote-band__inner reveal">
+      <span class="quote-band__mark">“</span>
+      <blockquote>Việc gì có lợi cho dân, ta phải hết sức làm. Việc gì hại đến dân, ta phải hết sức tránh.</blockquote>
+      <cite>— Chủ tịch Hồ Chí Minh</cite>
+    </div>
+  </section>
+
+  <!-- ===== HOẠT ĐỘNG ===== -->
+  <section class="section section--alt" id="hoat-dong">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="kicker">Hoạt động</span>
+        <h2 class="section__title">Tin tức &amp; hoạt động nổi bật</h2>
+      </div>
+      <div class="news" id="newsGrid" data-limit="3"></div>
+      <div class="center-cta reveal"><a href="tin-tuc.html" class="btn btn--outline">Xem tất cả tin tức →</a></div>
+    </div>
+  </section>
+
+  <!-- ===== VĂN BẢN ===== -->
+  <section class="section" id="van-ban">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="kicker">Văn bản</span>
+        <h2 class="section__title">Văn bản – Tài liệu</h2>
+      </div>
+      <div class="docs" id="docsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== LIÊN HỆ ===== -->
+  <section class="section section--alt" id="lien-he">
+    <div class="container grid-2">
+      <div class="reveal">
+        <span class="kicker">Liên hệ</span>
+        <h2 class="section__title">Thông tin liên hệ</h2>
+        <ul class="contact-list">
+          <li><span>🏛️</span> Văn phòng Đoàn ĐBQH và HĐND tỉnh Thanh Hóa</li>
+          <li><span>📍</span> Số 35 Đại lộ Lê Lợi, TP. Thanh Hóa, tỉnh Thanh Hóa</li>
+          <li><span>✉️</span> <a href="mailto:sonthkh@gmail.com">Email liên hệ Chi bộ</a></li>
+          <li><span>☎️</span> (Điện thoại Văn phòng – cập nhật sau)</li>
+        </ul>
+      </div>
+      <form class="contact-form reveal" onsubmit="return handleContact(event)">
+        <h3>Gửi ý kiến / góp ý</h3>
+        <div class="field"><label>Họ và tên</label><input type="text" required placeholder="Nhập họ tên" /></div>
+        <div class="field"><label>Email</label><input type="email" required placeholder="email@domain.com" /></div>
+        <div class="field"><label>Nội dung</label><textarea rows="4" required placeholder="Nội dung góp ý..."></textarea></div>
+        <button type="submit" class="btn btn--gold">Gửi nội dung</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <strong>CHI BỘ BAN PHÁP CHẾ</strong>
+        <span>Đảng bộ Văn phòng Đoàn ĐBQH và HĐND tỉnh Thanh Hóa</span>
+      </div>
+      <nav class="footer__nav">
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#nhan-su">Nhân sự</a>
+        <a href="#nhiem-vu">Nhiệm vụ</a>
+        <a href="#hoat-dong">Hoạt động</a>
+        <a href="#van-ban">Văn bản</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">© <span id="year"></span> Chi bộ Ban Pháp chế HĐND tỉnh Thanh Hóa. Bảo lưu mọi quyền.</div>
+    </div>
+  </footer>
+
+  <a href="#trang-chu" class="to-top" id="toTop" aria-label="Lên đầu trang">↑</a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

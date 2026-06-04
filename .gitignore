@@ -1,0 +1,14 @@
+# Hệ điều hành
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Trình soạn thảo
+.vscode/
+.idea/
+
+# Nhật ký
+*.log
+
+# Phụ thuộc (nếu có)
+node_modules/

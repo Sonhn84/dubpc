@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Văn bản – Tài liệu · Chi bộ Ban Pháp chế HĐND tỉnh Thanh Hóa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__left">ĐẢNG BỘ VĂN PHÒNG ĐOÀN ĐBQH VÀ HĐND TỈNH THANH HÓA</span>
+      <span class="topbar__right">
+        <a href="#" data-login>🔒 Quản trị</a><span class="dot">•</span>
+        <a href="index.html#lien-he">Liên hệ</a><span class="dot">•</span><span id="today"></span>
+      </span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__emblem" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="52" height="52"><circle cx="32" cy="32" r="30" fill="#ffd24c"/><circle cx="32" cy="32" r="30" fill="none" stroke="#b8860b" stroke-width="1.5"/><g fill="#b01217"><path d="M20 44c-4-6-3-15 4-20l3 3c-5 4-6 11-3 16z"/><rect x="29" y="14" width="4" height="30" rx="2" transform="rotate(40 31 29)"/><rect x="26" y="22" width="20" height="4" rx="2" transform="rotate(-8 36 24)"/></g></svg>
+        </span>
+        <span class="brand__text"><strong>CHI BỘ BAN PHÁP CHẾ</strong><small>HĐND tỉnh Thanh Hóa</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="index.html#nhan-su">Tổ chức &amp; Nhân sự</a>
+        <a href="index.html#nhiem-vu">Chức năng – Nhiệm vụ</a>
+        <a href="tin-tuc.html">Tin tức</a>
+        <a href="van-ban.html" class="active">Văn bản</a>
+        <a href="index.html#lien-he">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="kicker kicker--light">Tài liệu</span>
+      <h1>Văn bản – Tài liệu họp</h1>
+      <p>Quy chế, nghị quyết, báo cáo, kế hoạch và tài liệu sinh hoạt của Chi bộ.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="docs" id="docsGrid"></div>
+      <p class="note reveal">* Đăng nhập <strong>Quản trị</strong> để thêm/sửa văn bản và đính kèm liên kết tệp.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand"><strong>CHI BỘ BAN PHÁP CHẾ</strong><span>Đảng bộ Văn phòng Đoàn ĐBQH và HĐND tỉnh Thanh Hóa</span></div>
+      <nav class="footer__nav">
+        <a href="gioi-thieu.html">Giới thiệu</a><a href="index.html#nhan-su">Nhân sự</a>
+        <a href="index.html#nhiem-vu">Nhiệm vụ</a><a href="tin-tuc.html">Tin tức</a><a href="van-ban.html">Văn bản</a>
+      </nav>
+    </div>
+    <div class="footer__bottom"><div class="container">© <span id="year"></span> Chi bộ Ban Pháp chế HĐND tỉnh Thanh Hóa. Bảo lưu mọi quyền.</div></div>
+  </footer>
+
+  <a href="#" class="to-top" id="toTop" aria-label="Lên đầu trang">↑</a>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
