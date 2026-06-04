@@ -10,6 +10,6 @@
    Khi CHƯA cấu hình, website vẫn chạy ở chế độ xem (dữ liệu mẫu).
    ============================================================ */
 window.APP_CONFIG = {
-  SUPABASE_URL: "YOUR_SUPABASE_URL",
-  SUPABASE_ANON_KEY: "YOUR_SUPABASE_ANON_KEY"
+  SUPABASE_URL: "https://lfexiscblqzggnqboazt.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_nvUXlENbmgfbNCoChMXMoQ_6935wJGX"
 };
