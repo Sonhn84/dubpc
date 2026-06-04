@@ -13,6 +13,8 @@
     return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
   function el(html) { var t = d.createElement("template"); t.innerHTML = html.trim(); return t.content.firstChild; }
   function qs(name){ return new URLSearchParams(w.location.search).get(name); }
+  // CSS background-image an toàn khi nhúng trong thuộc tính style="..." (dùng &quot; thay cho ")
+  function bgi(url){ return "background-image:url(&quot;" + esc(url) + "&quot;)"; }
 
   /* ============================================================
      1) UI CHUNG
@@ -77,7 +79,7 @@
   function memberCard(m) {
     var initials = m.lead ? (m.badge === "Bí thư" ? "BT" : "PBT") : "ĐV";
     var avatar = m.photo
-      ? '<div class="person__avatar person__avatar--img" style="background-image:url(' + JSON.stringify(m.photo) + ')"><span class="person__badge">' + esc(m.badge) + '</span></div>'
+      ? '<div class="person__avatar person__avatar--img" style="' + bgi(m.photo) + '"><span class="person__badge">' + esc(m.badge) + '</span></div>'
       : '<div class="person__avatar" data-initials="' + esc(initials) + '"><span class="person__badge">' + esc(m.badge) + '</span></div>';
     return '<article class="person ' + (m.lead ? "person--lead" : "") + ' reveal" data-id="' + esc(m.id) + '">' +
       adminBtn("edit-member", "Sửa") + avatar +
@@ -88,7 +90,7 @@
 
   function newsCard(n) {
     var media = n.image
-      ? '<div class="news-card__media news-card__media--img" style="background-image:url(' + JSON.stringify(n.image) + ')"></div>'
+      ? '<div class="news-card__media news-card__media--img" style="' + bgi(n.image) + '"></div>'
       : '<div class="news-card__media" style="--c1:' + esc(n.color) + ';--c2:' + esc(n.color) + '99"><span>' + esc(n.category) + '</span></div>';
     return '<article class="news-card reveal" data-id="' + esc(n.id) + '">' + adminBtn("edit-news", "Sửa") + media +
       '<div class="news-card__body"><span class="news-card__date">' + esc(n.date) + '</span>' +
@@ -143,7 +145,7 @@
     loading(container, "bài viết");
     var n = await API.getNewsById(id);
     if (!n) { container.innerHTML = "<p class='empty'>Không tìm thấy tin bài.</p>"; return; }
-    var hero = n.image ? '<div class="article__hero" style="background-image:url(' + JSON.stringify(n.image) + ')"></div>'
+    var hero = n.image ? '<div class="article__hero" style="' + bgi(n.image) + '"></div>'
       : '<div class="article__hero" style="background:linear-gradient(135deg,' + esc(n.color) + ',' + esc(n.color) + 'aa)"><span>' + esc(n.category) + '</span></div>';
     container.innerHTML = hero +
       '<span class="news-card__date">' + esc(n.date) + ' · ' + esc(n.category) + '</span>' +
